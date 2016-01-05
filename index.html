@@ -27,7 +27,13 @@
 
 
 <script type="text/javascript">
+
 $(document).ready(function(){
+  $(window).load(function(){
+   $("#texto-inicial").show("drop");
+  });
+      
+      
      $("#myCarousel").carousel({
          interval : 3000,
          pause: false
@@ -43,8 +49,7 @@ $(document).ready(function(){
     
     
     
-    
-});
+  
 </script>
 
 
@@ -57,7 +62,7 @@ $(document).ready(function(){
 
 #servicios{
   
-height:1100px;  
+height:1150px;  
   
 }  
 
@@ -105,7 +110,7 @@ width:160px;
 
 #inbound{
   
-height:900px;  
+height:850px;  
 }
   
 .titulo-dos{
@@ -115,20 +120,31 @@ font-size:35px;
 }  
 
 
+#contacto{
+  
+  height:1240px;
+  
+}
 
 
 .titulo-servicios{
-top:4%;  
+top:1%;  
 font-size:40px;  
   
 }
 
 
-
+.titulo-contacto{
+  
+  top:0;
+  
+}
 
 .row,col-md-4,h1{
+
+margin-top: 10px;
   
-font-size:30px;  
+font-size:20px;  
 
   
 }
@@ -167,9 +183,9 @@ margin-bottom:0;
 
 .carousel{
 margin-top:0;
-background: url('geoblackground.png');
 height:700px
 width:100%;  
+background-color:black;
 }
 
 </style>
@@ -252,7 +268,7 @@ width:100%;
          		<div class="carousel-caption">
                   <h1> TE AYUDAMOS A LLEGAR A TODOS TUS CLIENTES POTENCIALES DE UNA MANERA MÁS EFICIENTE Y MEDIBLE, ASÍ TE POSICIONARÁS Y CRECERÁS MÁS RÁPIDO </h1>
                   
-               <a class="btn btn-lg btn-primary" href="#" role="button"> Más información</a> 
+               <a class="btn btn-lg btn-danger" href="contenido.html" role="button"> Más información</a> 
                 </div>
             </div>
             <div class="item">
@@ -261,7 +277,7 @@ width:100%;
                 <div class="carousel-caption">
                   <h1>TENIENDO PRESENCIA EN DISTINTAS PLATAFORMAS Y CANALES DE COMUNICACIÓN  Y ENTENDIENDO LOS HÁBITOS DE TUS CLIENTES Y CLIENTES POTENCIALES EN MEDIOS DIGITALES</h1>
                   
-                      <a class="btn btn-lg btn-primary" href="#" role="button"> Más información</a>
+                      <a class="btn btn-lg btn-danger" href="contenido.html" role="button"> Más información</a>
                  
                 </div>
             </div>
@@ -270,7 +286,7 @@ width:100%;
                 <div class="carousel-caption">
                   <h1>GENERAMOS Y ANALIZAMOS MÉTRICAS WEB A TRAVÉS DE TODO EL DIGITAL FUNNEL  PARA HACERLO CADA VEZ MÁS EFICIENTE Y CONVERTIR MAS LEADS EN CLIENTES </h1>
                 
-                 <a class="btn btn-lg btn-primary" href="#" role="button"> Más información</a>               
+                 <a class="btn btn-lg btn-danger" href="contenido.html" role="button"> Más información</a>               
                 </div>
             </div>
            
@@ -322,6 +338,8 @@ width:100%;
     </div>
     <h1>DISEÑO Y DESARROLLO WEB</h1>
   <h4>Desarrollo de sitiow web adaptables a cualquier dispositivo,Wordpress y Comercio Electrónico</h4>
+  <a class="btn btn-lg btn-primary" href="contenido.html" role="button">Más información</a>
+  
   </div>
   <div class="col-md-4">
   <div class="circle">
@@ -329,6 +347,8 @@ width:100%;
   </div>  
   <h1>SEARCH ENGINE MARKETING</h1>
     <h4>Publicidad dirigida solamente a personas interesadas en tu producto ó servicio  en diferentes plataformas digitales</h4>
+    
+     <a class="btn btn-lg btn-primary" href="contenido.html" role="button">Más información</a>
   </div>
   
 
@@ -341,7 +361,7 @@ width:100%;
   <h1>INBOUND MARKETING</h1>
  <h4>Desarrollo y ejecución de estrategia INBOUND en redes sociales enfocada en contenido</h4>
 
-  
+   <a class="btn btn-lg btn-primary" href="contenido.html" role="button">Más información</a>
   </div>
   
   
@@ -518,19 +538,7 @@ google.maps.event.addListener(beachMarker, 'click', function() {
 
 </script>
 
-   <script>
-$(document).ready(function(){
-  
-   //  $( ".titulo" ).toggle( "drop");
-  $(".titulo").show("slide", { direction: "left" });
-  
-    $("button").click(function(){
-        $("#div1").fadeIn();
-      
-    });
-});
-</script>
- 
+
    
 
 </div>
