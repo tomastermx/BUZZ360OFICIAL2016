@@ -8,6 +8,12 @@
 <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  
+  <meta name=”keywords” content=”agencia,digital,seo,sem,inbound,marketing”>
+  
+  <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+
+  
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -23,10 +29,12 @@
 <script type="text/javascript" src="jquery.stellar.js"></script>
 <script type="text/javascript" src="jquery.stellar.min.js"></script>
 
-
-
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script type="text/javascript">
+
+
+
 
 $(document).ready(function(){
   $(window).load(function(){
@@ -40,6 +48,7 @@ $(document).ready(function(){
      });
      
   
+  
 });
     
     
@@ -52,6 +61,25 @@ $(document).ready(function(){
   
 </script>
 
+
+
+<script>
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 2600) {
+      $("#titulo-inbound").show("slide");   // apply effects and animations
+    }
+    
+    
+       if ($(this).scrollTop() > 3800) {
+      $("#leadership").show("slide");   // apply effects and animations
+    }
+    
+    
+});
+
+
+</script>
 
 <style type="text/css">
 
@@ -122,7 +150,7 @@ font-size:35px;
 
 #contacto{
   
-  height:1240px;
+  height:1300px;
   
 }
 
@@ -137,6 +165,7 @@ font-size:40px;
 .titulo-contacto{
   
   top:0;
+  margin-bottom:8px;
   
 }
 
@@ -265,10 +294,11 @@ background-color:black;
         <div class="carousel-inner">
             <div class="active item">
                 <div class="titulo-dos"> GANA MÁS CLIENTES  </div>
+      
          		<div class="carousel-caption">
                   <h1> TE AYUDAMOS A LLEGAR A TODOS TUS CLIENTES POTENCIALES DE UNA MANERA MÁS EFICIENTE Y MEDIBLE, ASÍ TE POSICIONARÁS Y CRECERÁS MÁS RÁPIDO </h1>
                   
-               <a class="btn btn-lg btn-danger" href="contenido.html" role="button"> Más información</a> 
+               <a class="btn btn-lg btn-danger" href="contenido.html#webanalytics" role="button"> Más información</a> 
                 </div>
             </div>
             <div class="item">
@@ -277,7 +307,7 @@ background-color:black;
                 <div class="carousel-caption">
                   <h1>TENIENDO PRESENCIA EN DISTINTAS PLATAFORMAS Y CANALES DE COMUNICACIÓN  Y ENTENDIENDO LOS HÁBITOS DE TUS CLIENTES Y CLIENTES POTENCIALES EN MEDIOS DIGITALES</h1>
                   
-                      <a class="btn btn-lg btn-danger" href="contenido.html" role="button"> Más información</a>
+                      <a class="btn btn-lg btn-danger" href="contenido.html#webanalytics" role="button"> Más información</a>
                  
                 </div>
             </div>
@@ -286,7 +316,7 @@ background-color:black;
                 <div class="carousel-caption">
                   <h1>GENERAMOS Y ANALIZAMOS MÉTRICAS WEB A TRAVÉS DE TODO EL DIGITAL FUNNEL  PARA HACERLO CADA VEZ MÁS EFICIENTE Y CONVERTIR MAS LEADS EN CLIENTES </h1>
                 
-                 <a class="btn btn-lg btn-danger" href="contenido.html" role="button"> Más información</a>               
+                 <a class="btn btn-lg btn-danger" href="contenido.html#webanalytics" role="button"> Más información</a>               
                 </div>
             </div>
            
@@ -318,7 +348,7 @@ background-color:black;
        </div>
  
 
- <div data-stellar-background-ratio= ".09"  class="panel"  id="second">
+ <div data-stellar-background-ratio= ".06"  class="panel"  id="second">
    
    
   <div id="servicios">
@@ -376,7 +406,7 @@ background-color:black;
 
 <div id="inbound">
   
-<div class="titulo">
+<div class="titulo" id="titulo-inbound">
   
   
 INBOUND MARKETING  
@@ -387,13 +417,13 @@ INBOUND MARKETING
 
 
 
- <div data-stellar-background-ratio= ".09"  class="panel"  id="third">
+ <div data-stellar-background-ratio= ".06"  class="panel"  id="third">
 
 
 
 <div id="teamwork">
   
-<div class="titulo">  
+<div class="titulo" id="leadership">  
 TRABAJO EN EQUIPO Y LIDERAZGO
 </div>
 

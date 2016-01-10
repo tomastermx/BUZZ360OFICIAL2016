@@ -8,6 +8,9 @@
 <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+   <meta name=”keywords” content=”agencia,digital,seo,sem,inbound,marketing” >
+   <meta name="description" content="Agencia Digital especializada en Desarrollo Web Search Engine Marketing, Inbound Marketing">
+  
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -24,13 +27,16 @@
 <script type="text/javascript" src="jquery.stellar.min.js"></script>
 
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
 
 
 <script type="text/javascript">
 
 $(document).ready(function(){
   
-  
+
   
 $.stellar({
 
@@ -39,19 +45,42 @@ $.stellar({
 });
 
  
+  
+
+  
      
   
 });
     
     
-    
-    
-    
-    
-    
-    
+ 
+  
   
 </script>
+
+
+
+<script>
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 550) {
+      $("#socialinbound").show("slide");   // apply effects and animations
+    }
+    
+    if($(this).scrollTop() > 700) {
+        $("#dev").show("slide");
+      
+    }
+});
+
+
+
+
+</script>
+
+
+
+
 
 
 <style type="text/css">
@@ -60,25 +89,43 @@ $.stellar({
 body{
   
  font-family:Montserrat;  
-  
-  
+
+  background-color:black;
 }
+
+
 
 
 
 .panel{
   
 text-align:center;  
+color:white;
+	background: url("polygon.jpg") 
+
 
 }
 
 
+.view,h1,h2,h4{
+ position:relative; 
+  top:50px;
+}
+
+.view{
+  
+height:350px;
+text-align:center;
+background-color:red;
+
+ opacity: 0.88;
+}
+
 
 #sem{
   
-margin-top:50px;
 
-background-color:blue;  
+
 }
 
 
@@ -86,26 +133,41 @@ background-color:blue;
 #webanalytics{
   
   
-background-color:red;  
+ 
 }
 
 
 
 #inboundmkt{
-background-color:green;    
+
   
 }
 
+
+#socialinbound{
+  
+display:none;  
+}
 
 
 #devweb {
   
-background-color:yellow;    
+  
   
 }
 
 
+#dev{
+  
+display:none;  
+}
+
 @media (max-width:991px)   {
+  
+.view{
+  
+  height:560px;
+}
   
   
 }
@@ -165,26 +227,41 @@ background-color:yellow;
 </div>
 
 
-  <div data-stellar-background-ratio= ".09"  class="panel"  id="first">
+  <div data-stellar-background-ratio= "0.3"  class="panel"  id="first">
     
-    <div data-stellar-ratio=".6">  
     
-       <div class="panel" id="sem">
-      <h1> SEM Y RED DE CONTENIDOS </h1>
-        
-        </div>
-
-        
-      
-     </di>
-     
-     
-     
-       <div data-stellar-ratio=".6">  
     
-       <div class="panel" id="webanalytics">
+      <div data-stellar-ratio="1">  
+    
+       <div class="view" id="webanalytics">
       <h1> ANALÍTICA WEB </h1>
+        <h4>Te ayudamos a que tu sitio web sea una poderosa herramienta  para vender:</h4>
+        <ul style="list-style-type:none" >
+          <li><h4>Monitoreando el tráfico proveniente de distintas fuentes (Redes Sociales,SEO,Email Marketing,Blog).</h4></li>
+            <li><h4> Evaluando los contenidos más  consultados  ó productos que generan mayor interés. </h4></li>
+            <li><h4> Mejorando la experiencia del usuario al analizar su comportamiento dentro del sitio web. </h4></li>
+         <li><h4>Tomando  toda esta información para mejorar la estrategia integral  Digital y el Digital Funnel. </h4></li>
+        </ul>
         
+        </div>
+
+        
+      
+     </di>
+    
+    
+  
+    
+    
+    
+    
+    <div data-stellar-ratio="1">  
+    
+       <div class="view" id="sem">
+      <h1> SEARCH ENGINE MARKETING  Y RED DE CONTENIDOS </h1>
+        <h4>Optimizamos tus recursos y esfuerzos en publicidad, mostrando  tus productos y servicios únicamente a las personas  que estén interesados en ellos  ó que cumplan con las características del segmento al que vas dirigido, a través de Banners, Anuncios de Texto,Rich Media y Videos en  Sitios Web, Blogs, Revistas Digitales, Apps Móviles  ó Youtube.  </h4><br>
+        <h4>Dirigimos  a todas las personas interesadas en tu producto ó servicio a tu sitio web y te ayudamos a generar más  conversiones y por lo tanto  más ventas.</h4>
+                <h4> Utilizando Analítica Web y HeatMaps, analizamos el comportamiento de los visitantes a tu sitio  para saber sus gustos y preferencias y así mejoramos continuamente  toda la estrategia Digital.  </h4>
         </div>
 
         
@@ -194,10 +271,26 @@ background-color:yellow;
      
      
      
-       <div data-stellar-ratio=".6">  
+     
+     
+     
+     
+       <div data-stellar-ratio="1">  
     
-       <div class="panel" id="inboundmkt">
+       <div class="view" id="inboundmkt">
+      
       <h1> INBOUND MARKETING </h1>
+         <div id="socialinbound">
+        <ul style="list-style-type:none" >
+          <h4>Generamos contenido que atraiga,inspire, eduque y fortalezca tu marca y productos en el segemento al que vas dirigido y lo difundimos a diferentes canales sociales, potencializando la estrategia con las siguientes herramientas:  </h4>
+        <li><h4>Fan Gate para Fan Page</h4></li>  
+        <li><h4> Tap/Apps</h4></li>
+         <li><h4> Implementación de apps para promociones,concursos y encuestas </h4></li>
+          <li><h4>Integración con E-mail Marketing</h4></li>
+         <li><h4>Twitter Cards</h4></li>
+           <li><h4>Social Analytics</h4></li>
+        </ul>
+        </div>
         
         </div>
 
@@ -207,14 +300,16 @@ background-color:yellow;
      
      
      
-       <div data-stellar-ratio=".6">  
+       <div data-stellar-ratio="1">  
     
-       <div class="panel" id="devweb">
+       <div class="view" id="devweb">
       <h1> DESARROLLO WEB </h1>
-        
+      <div id="dev">
+        <h4> Desarrollamos  sitios web adaptables a cualquier dispositivo, Blogs y Revistas Digitales en Wordpress y Sitios para comercio electrónico</h4>
+
         </div>
 
-        
+        </div>
       
      </di>
      
