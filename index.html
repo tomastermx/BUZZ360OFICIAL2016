@@ -31,6 +31,8 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+
 <script type="text/javascript">
 
 
@@ -38,12 +40,24 @@
 
 $(document).ready(function(){
   $(window).load(function(){
-   $("#texto-inicial").show("drop");
+   $("#texto-inicial").animate({
+    paddingLeft:'-=300px',
+    opacity:'1'
+
+    },'8000');
+   
+   
+   $("#texto-inicio-2").animate({
+    
+    paddingRight:'-=300px',
+    opacity:'1'
+    },'6000');
+   
   });
       
       
      $("#myCarousel").carousel({
-         interval : 3000,
+         interval : 5000,
          pause: false
      });
      
@@ -65,15 +79,92 @@ $(document).ready(function(){
 
 <script>
 
+  
+
+
+
+
+
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 2600) {
-      $("#titulo-inbound").show("slide");   // apply effects and animations
+  
+  
+    if ($(this).scrollTop() > 1800) {
+    
+      
+      $(".row").animate({
+    paddingLeft:'-=100px',
+    opacity:'1'
+
+    },'9000');
+      
+    }
+    
+  
+  
+  
+  
+    if ($(this).scrollTop() > 2700) {
+      $("#titulo-inbound").animate({
+        paddingLeft:'-=100px',
+       opacity:'1'
+       
+        },'9000');
+    
+    $("#inbound-content").animate({
+        paddingRight:'-=100px',
+       opacity:'1'
+       
+        },'11000');
+    
     }
     
     
-       if ($(this).scrollTop() > 3800) {
-      $("#leadership").show("slide");   // apply effects and animations
+    
+    
+    
+       if ($(this).scrollTop() > 3900) {
+      $("#leadership").animate({
+        
+       paddingLeft:'-=100px',
+       opacity:'1'
+        
+        },'9000');
+      
+      
+      
+       $("#leadership-content").animate({
+        paddingRight:'-=100px',
+       opacity:'1'
+       
+        },'8000');
+    
+    
+      if ($(this).scrollTop() > 4900) {
+      $(".titulo-contacto").animate({
+        paddingLeft:'-=100px',
+       opacity:'1'
+       
+        },'8000');
+    
+       $("#map-canvas").animate({
+        paddingRight:'-=200px',
+        opacity:'1'
+        },'7000') ;  
+    
     }
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    }
+    
+  
+    
     
     
 });
@@ -83,10 +174,76 @@ $(window).scroll(function() {
 
 <style type="text/css">
 
+#map-canvas{
+  padding-right:200px;
+ opacity:0; 
+  
+}
+
+@media (max-width:406px){
+ 
+#first{
+  
+  height:1700px;
+}
+
+
+#inicio{
+  
+  height:900px;
+}
+
+
+#vacio{
+  
+height:200px;  
+}
+
+
+
+#second{
+  height:2800px;
+  
+}
+
+
+#inbound{
+
+background-color:black;  
+height:500px;  
+}
+
+
+
+div#servicios{
+  height:1400px;
+}
+
+
+#third{
+height:2000px;  
+  
+}
+
+ #contacto{
+   
+   height:1700px;
+ }
+
+
+    
+ 
+}
 
 
 @media (max-width:991px)   {
   
+
+
+.titulo{
+  
+font-size:50px;  
+}
 
 #servicios{
   
@@ -212,7 +369,7 @@ margin-bottom:0;
 
 .carousel{
 margin-top:0;
-height:700px
+height:700px;
 width:100%;  
 background-color:black;
 }
@@ -254,7 +411,7 @@ background-color:black;
 <li class="active"> <a href="#inicio">INICIO</a></li>
   <li><a href="#nosotros">QUÉ HACEMOS</a></li>
   <li><a href="#servicios"> SERVICIOS</a></li>
-  <li><a href="clientes.html">BLOG</a></li>
+  <li><a href="http://blog.buzz360.com.mx">BLOG</a></li>
   <li><a href="#contacto">CONTACTO</a></li>
   </ul>
 </div>
@@ -271,9 +428,18 @@ background-color:black;
   
 <div id="inicio"> 
 <div class="titulo">
+  
+  <div id="textobuzz">
+    BUZZ360
+  </div>
+  
     <div id="texto-inicial">
-    BIENVENIDOS A BUZZ360 
-</div>
+    BIENVENIDOS A LA NUEVA ERA DIGITAL 
+</div >
+    <div id="texto-inicio-2"> ¿ Quieres tener más clientes?</div>
+<button class="btn btn-default btn-lg ">
+    Click Aquí
+  </button>
 </div>
 </div>
 
@@ -367,7 +533,7 @@ background-color:black;
     <img src="rocket3.png" width="129px", height="226px"alt="rocket">  
     </div>
     <h1>DISEÑO Y DESARROLLO WEB</h1>
-  <h4>Desarrollo de sitiow web adaptables a cualquier dispositivo,Wordpress y Comercio Electrónico</h4>
+  <h4>Desarrollo de sitio web adaptables a cualquier dispositivo,Wordpress y Comercio Electrónico</h4>
   <a class="btn btn-lg btn-primary" href="contenido.html" role="button">Más información</a>
   
   </div>
@@ -389,7 +555,7 @@ background-color:black;
       
     </div>
   <h1>INBOUND MARKETING</h1>
- <h4>Desarrollo y ejecución de estrategia INBOUND en redes sociales enfocada en contenido</h4>
+ <h4>Generación de una estrategia  que inspire , interese, y enamore  a tu cliente a través de contenidos en redes sociales</h4>
 
    <a class="btn btn-lg btn-primary" href="contenido.html" role="button">Más información</a>
   </div>
@@ -410,6 +576,8 @@ background-color:black;
   
   
 INBOUND MARKETING  
+<div id="inbound-content">  Crea relaciones sólidas y largo plazo con tus clientes</div>
+
   
 </div> 
   
@@ -425,6 +593,8 @@ INBOUND MARKETING
   
 <div class="titulo" id="leadership">  
 TRABAJO EN EQUIPO Y LIDERAZGO
+<div id="leadership-content"> Pasión por la tecnología y como las empresas la aprovechan  </div>
+
 </div>
 
 
