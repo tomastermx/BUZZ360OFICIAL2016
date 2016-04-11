@@ -99,12 +99,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', end
 
 }
 
+.btn-lg{
+	
+	background-color:rgba(0, 0, 0, 0.5);
+	
+}
 
+.btn-default{
+border:3px solid white;
+background-image:none;	
+color:white;
 
-.btn-lg  {
-
-background-color:red;	
-color:white;	
 }
 
 
@@ -169,19 +174,42 @@ width:100%;
 
 }
 
-
+#textobuzz{
+	
+text-align:center; 
+padding-right:50px;
+opacity:0;	
+	
+}
 
 #texto-inicial{
 
-padding-left:300px;
+padding-left:50px;
 
   opacity:0;
 }
 
+#ventas{
+height:100%;	
+background-color:red;
+width:100%;
+z-index:100;
+position:fixed;
+color:white;
+display:none;
+}
+
+#captura{
+	
+margin-top:65px;	
+	
+}
 
 #texto-inicio-2{
+text-align:center; 
+	
 font-size:40px;	
-padding-right:300px;
+padding-right:50px;
 opacity:0;
 }
 
@@ -207,7 +235,7 @@ text-align:center;
 
 #titulo-inbound{
 
-padding-left:100px;
+padding-left:50px;
 opacity:0;
   
   
@@ -216,7 +244,7 @@ opacity:0;
 #inbound-content{
 text-align:center; 
 opacity:0;
-Padding-right:100px;
+padding-right:50px;
 margin-top:50px;	
 }
 
@@ -284,7 +312,8 @@ text-align:center;
 }
 
 
-#map-canvas { 
+#map-canvas {
+padding-left:100px;
 margin:auto;  
 height: 500px ; width:90%;
 

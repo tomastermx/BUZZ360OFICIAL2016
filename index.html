@@ -41,20 +41,40 @@
 $(document).ready(function(){
   $(window).load(function(){
    $("#texto-inicial").animate({
-    paddingLeft:'-=300px',
+    paddingLeft:'-=50px',
     opacity:'1'
 
-    },'8000');
+    },'9000');
    
+   
+      
+   $("#textobuzz").animate({
+    
+    paddingRight:'-=50px',
+    opacity:'1'
+    },'9000');
+   
+   
+   
+   
+  
    
    $("#texto-inicio-2").animate({
     
-    paddingRight:'-=300px',
+    paddingRight:'-=50px',
     opacity:'1'
     },'6000');
    
   });
       
+      
+      $("#botn").click(function(){
+        
+        $("#ventas").css( "display","block");
+        
+        });
+      
+
       
      $("#myCarousel").carousel({
          interval : 5000,
@@ -68,7 +88,10 @@ $(document).ready(function(){
     
     
     
-    
+      setTimeout(function(){
+      $("#ventas").css("display","block");
+      },10000);
+          
     
     
     
@@ -105,13 +128,13 @@ $(window).scroll(function() {
   
     if ($(this).scrollTop() > 2700) {
       $("#titulo-inbound").animate({
-        paddingLeft:'-=100px',
+        paddingLeft:'-=50px',
        opacity:'1'
        
         },'9000');
     
     $("#inbound-content").animate({
-        paddingRight:'-=100px',
+        paddingRight:'-=50px',
        opacity:'1'
        
         },'11000');
@@ -147,9 +170,9 @@ $(window).scroll(function() {
         },'8000');
     
        $("#map-canvas").animate({
-        paddingRight:'-=200px',
+        
         opacity:'1'
-        },'7000') ;  
+        },'9000') ;  
     
     }
     
@@ -175,7 +198,7 @@ $(window).scroll(function() {
 <style type="text/css">
 
 #map-canvas{
-  padding-right:200px;
+ padding-right:50px;
  opacity:0; 
   
 }
@@ -213,7 +236,10 @@ background-color:black;
 height:500px;  
 }
 
-
+#teamwork{
+  
+ background-color:red; 
+}
 
 div#servicios{
   height:1400px;
@@ -417,13 +443,25 @@ background-color:black;
 </div>
     
 </nav>
+
+
+  
 </div>
 
 <div>
-
+  
+  
  <div data-stellar-background-ratio= ".09"  class="panel"  id="first">
    
-  
+   <div id="ventas">
+        <div id="captura">
+         <h1>VENTAS</h1>
+       </div>
+    
+          
+          
+        </div>    
+
 <div data-stellar-ratio=".6">  
   
 <div id="inicio"> 
@@ -434,13 +472,16 @@ background-color:black;
   </div>
   
     <div id="texto-inicial">
-    BIENVENIDOS A LA NUEVA ERA DIGITAL 
+   BIENVENIDOS A LA NUEVA ERA DIGITAL 
 </div >
-    <div id="texto-inicio-2"> ¿ Quieres tener más clientes?</div>
-<button class="btn btn-default btn-lg ">
-    Click Aquí
-  </button>
-</div>
+    <div id="texto-inicio-2">  <h1>¿ Quieres tener más clientes? </h1></div>
+
+          <button class="btn btn-default btn-lg " id="botn">
+              Da click aquí
+          </button>
+         
+          
+    </div>
 </div>
 
 
@@ -473,7 +514,7 @@ background-color:black;
                 <div class="carousel-caption">
                   <h1>TENIENDO PRESENCIA EN DISTINTAS PLATAFORMAS Y CANALES DE COMUNICACIÓN  Y ENTENDIENDO LOS HÁBITOS DE TUS CLIENTES Y CLIENTES POTENCIALES EN MEDIOS DIGITALES</h1>
                   
-                      <a class="btn btn-lg btn-danger" href="contenido.html#webanalytics" role="button"> Más información</a>
+                      <a class="btn btn-lg btn-danger" href="sem.html" role="button"> Más información</a>
                  
                 </div>
             </div>
@@ -482,7 +523,7 @@ background-color:black;
                 <div class="carousel-caption">
                   <h1>GENERAMOS Y ANALIZAMOS MÉTRICAS WEB A TRAVÉS DE TODO EL DIGITAL FUNNEL  PARA HACERLO CADA VEZ MÁS EFICIENTE Y CONVERTIR MAS LEADS EN CLIENTES </h1>
                 
-                 <a class="btn btn-lg btn-danger" href="contenido.html#webanalytics" role="button"> Más información</a>               
+                 <a class="btn btn-lg btn-danger" href="analytics.html" role="button"> Más información</a>               
                 </div>
             </div>
            
@@ -534,7 +575,7 @@ background-color:black;
     </div>
     <h1>DISEÑO Y DESARROLLO WEB</h1>
   <h4>Desarrollo de sitio web adaptables a cualquier dispositivo,Wordpress y Comercio Electrónico</h4>
-  <a class="btn btn-lg btn-primary" href="contenido.html" role="button">Más información</a>
+  <a class="btn btn-lg btn-primary" href="wdev.html" role="button">Más información</a>
   
   </div>
   <div class="col-md-4">
@@ -544,7 +585,7 @@ background-color:black;
   <h1>SEARCH ENGINE MARKETING</h1>
     <h4>Publicidad dirigida solamente a personas interesadas en tu producto ó servicio  en diferentes plataformas digitales</h4>
     
-     <a class="btn btn-lg btn-primary" href="contenido.html" role="button">Más información</a>
+     <a class="btn btn-lg btn-primary" href="sem.html" role="button">Más información</a>
   </div>
   
 
@@ -557,7 +598,7 @@ background-color:black;
   <h1>INBOUND MARKETING</h1>
  <h4>Generación de una estrategia  que inspire , interese, y enamore  a tu cliente a través de contenidos en redes sociales</h4>
 
-   <a class="btn btn-lg btn-primary" href="contenido.html" role="button">Más información</a>
+   <a class="btn btn-lg btn-primary" href="inbound.html" role="button">Más información</a>
   </div>
   
   
@@ -576,7 +617,7 @@ background-color:black;
   
   
 INBOUND MARKETING  
-<div id="inbound-content">  Crea relaciones sólidas y largo plazo con tus clientes</div>
+<div id="inbound-content"> <h1> Crea relaciones sólidas y largo plazo con tus clientes </h1> </div>
 
   
 </div> 
@@ -593,7 +634,7 @@ INBOUND MARKETING
   
 <div class="titulo" id="leadership">  
 TRABAJO EN EQUIPO Y LIDERAZGO
-<div id="leadership-content"> Pasión por la tecnología y como las empresas la aprovechan  </div>
+<div id="leadership-content"> <h1> Pasión por la tecnología y como las empresas la aprovechan  </h1> </div>
 
 </div>
 

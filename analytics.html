@@ -38,15 +38,16 @@ $(document).ready(function(){
    $(window).load(function(){
 
    $("#titulo-sem").animate({
-    paddingRight:'-=100px',
+    paddingRight:'-=300px',
     opacity:'1'
     },'8000'); 
   
-    $("#titulo-sem2").animate({
-    paddingLeft:'-=50px',
-    opacity:'1'
-    },'9000'); 
-  
+      $("#titulo-sem2").animate({
+        opacity:'1',
+        paddingLeft:'-=50px',
+        
+        },'9000')
+       
     
     
      $.stellar({
@@ -67,11 +68,7 @@ $(document).ready(function(){
         
         },'9000');
       
-      $("#contenido").animate({
-        
-        color:'green'
-        })
-      
+   
     }
     
    })
@@ -138,22 +135,10 @@ background-color:rgba(0, 0, 0, 0.5);
 
 position: relative;    
 top:25%;
-padding-right:100px;
+padding-right:300px;
 opacity:0;
 
 }
-  
-#titulo-sem2{
-   
-position:relative;
-top:38%;
-opacity:0;
-padding-left:50px;
-}
-  
-  
-  
-  
   
 #contenido{  
 
@@ -179,14 +164,35 @@ h2{
   margin-top:0;  
 }
 
+
+
+#titulo-sem2{
+   
+position:relative;
+top:38%;
+padding-left:50px;
+opacity:0;
+  
+   }
+   
+  
+
+
+
 @media (min-width:406px){
    
 h1{
+
 font-size:60px;
    
 }
    
 }
+
+
+
+
+
 
 </style>
 
@@ -238,23 +244,26 @@ font-size:60px;
     
       <div  data-stellar-ratio=".6">  
      <div id="sem">
-	        <div id="titulo-sem">
-                  <h1>SEARCH ENGINE MARKETING</h1>
-		   </div> 
+	      <div id="titulo-sem">
+          <h1>ANALITICA WEB</h1>
+		  </div>
         <div id="titulo-sem2">
-         <h2>Dirige tu publicidad exactamente hacia donde tus clientes estan</h2>
+         <h2>¿Ya tienes tu página web?,  Bien es hora que genere ventas para ti</h2>
         </div>
      
-        </div>
+         </div>
         </div>
 
     <div  data-stellar-ratio="1">
     
     <div id="contenido">
         <div id="titulo-contenido">
-     <h2> Optimizamos tus recursos y esfuerzos en publicidad, mostrando  tus productos y servicios únicamente a las personas  que estén interesados en ellos  ó que cumplan con las características del segmento al que vas dirigido, a través de Banners, Anuncios de Texto,Rich Media y Videos en  Sitios Web, Blogs, Revistas Digitales, Apps Móviles  ó Youtube. </h2> 
+     <h2> Usando  web analítica y heatmaps, monitoreamos  en tiempo real tu sitio  web y aportamos información  de valor  para que tu sitio genere más ventas. </h2> 
        </div>
-        
+        <di>
+    
+    
+    </div>
     </div>
     </div>
       
